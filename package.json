@@ -1,0 +1,34 @@
+{
+  "name": "unitywrapperwidget",
+  "widgetName": "UnityWrapperWidget",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "2021 Siemens",
+  "author": "Rob Van 't Hof",
+  "engines": {
+    "node": ">=12"
+  },
+  "config": {
+    "projectPath": "C:/Mendix/UnityWidget-TestApp",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "siemens",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-hot-loader": "^4.13.0",
+    "react-unity-webgl": "^8.5.1"
+  }
+}

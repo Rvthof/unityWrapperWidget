@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="siemens.unitywrapperwidget.UnityWrapperWidget" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+		supportedPlatform="Web"
+		xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+	<name>Unity Wrapper Widget</name>
+	<description>My widget description</description>
+	<icon/>
+	<properties>
+		<propertyGroup caption="General">
+			<property key="sampleText" type="string" required="false">
+				<caption>Default value</caption>
+				<description>Sample text input</description>
+			</property>
+			<property key="loaderUrl" type="attribute" required="true">
+				<caption>Loader URL</caption>
+				<description></description>
+				<attributeTypes>
+					<attributeType name="String" />
+				</attributeTypes>
+			</property>
+			<property key="dataUrl" type="attribute" required="true">
+				<caption>Data URL</caption>
+				<description></description>
+				<attributeTypes>
+					<attributeType name="String" />
+				</attributeTypes>
+			</property>
+			<property key="frameworkUrl" type="attribute" required="true">
+				<caption>Framework URL</caption>
+				<description></description>
+				<attributeTypes>
+					<attributeType name="String" />
+				</attributeTypes>
+			</property>
+			<property key="codeUrl" type="attribute" required="true">
+				<caption>Code URL</caption>
+				<description></description>
+				<attributeTypes>
+					<attributeType name="String" />
+				</attributeTypes>
+			</property>
+		</propertyGroup>
+		<propertyGroup caption="Interaction">
+			<property key="width" type="string">
+				<caption>Width</caption>
+				<description>Width of the player</description>
+			</property>
+			<property key="height" type="string">
+				<caption>Height</caption>
+				<description>Height of the player</description>
+			</property>
+			<property key="fullscreenBtn" type="boolean" defaultValue="true">
+				<caption>Show Fullscreen button</caption>
+				<description>Adds a fullscreen toggle button.</description>
+			</property>
+		</propertyGroup>
+		<propertyGroup caption="Actions">
+			<property key="actions" type="object" isList="true" required="false">
+				<caption>Actions</caption>
+				<description>A list of actions to interact with the Unity app.</description>
+				<properties>
+					<propertyGroup caption="Actions">
+						<property key="actionName" type="string" required="false">
+							<caption>Unity action name</caption>
+							<description/>
+						</property>
+						<property key="action" type="action" required="false">
+							<caption>Triggered action</caption>
+							<description/>
+						</property>
+					</propertyGroup>
+				</properties>
+			</property>
+		</propertyGroup>
+	</properties>
+</widget>
